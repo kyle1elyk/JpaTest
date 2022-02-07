@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "51cbd7ae-d75f-4c8b-b4f6-6369462fe794",
+		"name": "Drops",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Drop",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/drops/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"drops",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Drop",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Test Item\",\r\n    \"count\": 10\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/drops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"drops"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
